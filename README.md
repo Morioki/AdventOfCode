@@ -1,3 +1,3 @@
-# AdventOfCode2020
+# AdventOfCode
 
-A repository to store solutions for the AdventOfCode2020 challenge: https://adventofcode.com/2020
+A repository to store solutions for the AdventOfCode challenge: https://adventofcode.com
