@@ -1,26 +1,54 @@
 import pathlib
 import sys
-import itertools
+import numpy as np
 
 def parse(puzzle_input):
     """Parse input"""
-    return [str(line) for line in puzzle_input.split()]
-    # return [tuple(line.split()) for line in puzzle_input.split('\n')]
+    # print(puzzle_input)
+
+    puzzle_input = puzzle_input.splitlines()
+    balls = puzzle_input[0].split(',')
+    boards = []
+
+    board = np.empty(5, dtype=int)
+
+    resetFlag = False
+    for val in puzzle_input:
+        if val == puzzle_input[0]:
+            continue;
+        if val == '':
+            # Append Board 
+            if board.size == 25:
+                boards.append(board)
+            # Reset Board 
+            resetFlag = True
+            continue
+    
+        line = [int(item) for item in val.split()]
+        if resetFlag:
+            board = np.array(line)
+            resetFlag = False
+        else:
+            board = np.vstack((board, line))
+    
+    return balls, boards
 
 
-def part1(data):
+def part1(balls, boards):
     """Solve part 1"""
+    print(balls)
+    print(boards)
     pass
 
-def part2(data):
+def part2(balls, boards):
     """Solve part 2"""
     pass
 
 def solve(puzzle_input):
     """Solve the puzzle for the given input"""
-    data = parse(puzzle_input)
-    solution1 = part1(data)
-    solution2 = part2(data)
+    balls, boards = parse(puzzle_input)
+    solution1 = part1(balls, boards)
+    solution2 = part2(balls, boards)
 
     return solution1, solution2
 
