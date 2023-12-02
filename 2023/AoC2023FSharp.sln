@@ -13,9 +13,11 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Solution Items", "Solution 
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FShRunner", "FShRunner\FShRunner.fsproj", "{472B99C6-8AFC-4D1B-A38A-168B04366C93}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Helpers", "Helpers\Helpers.fsproj", "{660103D2-7886-4E15-B807-1A34A94ECBC6}"
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day1", "Day1\Day1.fsproj", "{198CE4E0-92A6-4F1C-8DDB-DC9BD7434D24}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Helpers", "Helpers\Helpers.fsproj", "{660103D2-7886-4E15-B807-1A34A94ECBC6}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day2", "Day2\Day2.fsproj", "{6B8FCBA4-62EF-4AB6-97E4-DAAB8E2387D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,5 +40,9 @@ Global
 		{660103D2-7886-4E15-B807-1A34A94ECBC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{660103D2-7886-4E15-B807-1A34A94ECBC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{660103D2-7886-4E15-B807-1A34A94ECBC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8FCBA4-62EF-4AB6-97E4-DAAB8E2387D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8FCBA4-62EF-4AB6-97E4-DAAB8E2387D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8FCBA4-62EF-4AB6-97E4-DAAB8E2387D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8FCBA4-62EF-4AB6-97E4-DAAB8E2387D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

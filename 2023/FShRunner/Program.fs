@@ -18,6 +18,8 @@ let main args =
     // pullDataset dayVal testFlag |> Seq.iter System.Console.WriteLine
     match dayVal with
     | 1 -> pullDataset dayVal testFlag |> Day1.runTasks
+    | 2 -> pullDataset dayVal testFlag |> Day2.runTasks
+    
     | _ -> invalidArg (nameof dayVal) (sprintf "Day %d is not a valid parameter" dayVal)
     |> ignore
 
