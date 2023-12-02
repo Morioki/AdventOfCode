@@ -10,7 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\day1\day1.fsproj" />
+    <ProjectReference Include="..\Day1\Day1.fsproj" />
+    <ProjectReference Include="..\Helpers\Helpers.fsproj" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,24 @@
 ﻿open System
-open day1
+
+open Helpers
 
 [<EntryPoint>]
 let main args =
-    printfn "Nice command-line arguments! Here's what System.Text.Json has to say about them:"
+       
+    // First Arg = TestFlag
+    let testFlag = args[0] |> int
+    // Second Arg = Day
+    let dayVal = 
+        match Array.length(args) with
+        | 0 -> "1"
+        | 1 -> "1"
+        | _ -> args[1]
+        |> int
 
-    let value, json = getJson {| args=args; year=System.DateTime.Now.Year |}
-    printfn $"Input: %0A{value}"
-    printfn $"Output: %s{json}"
+    // pullDataset dayVal testFlag |> Seq.iter System.Console.WriteLine
+    match dayVal with
+    | 1 -> pullDataset dayVal testFlag |> Day1.runTasks
+    | _ -> invalidArg (nameof dayVal) (sprintf "Day %d is not a valid parameter" dayVal)
+    |> ignore
 
     0 // return an integer exit code
