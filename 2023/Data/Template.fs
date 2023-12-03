@@ -1,3 +1,5 @@
+open Helpers
+
 let task1 (data:seq<string>): int =
     nyi
 

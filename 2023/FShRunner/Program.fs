@@ -19,6 +19,7 @@ let main args =
     match dayVal with
     | 1 -> pullDataset dayVal testFlag |> Day1.runTasks
     | 2 -> pullDataset dayVal testFlag |> Day2.runTasks
+    | 3 -> pullDataset dayVal testFlag |> Day3.runTasks
     
     | _ -> invalidArg (nameof dayVal) (sprintf "Day %d is not a valid parameter" dayVal)
     |> ignore
